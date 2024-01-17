@@ -1,0 +1,354 @@
+// global variables colors 
+
+$main-color:rgb(92, 105, 92);
+$hover-color:rgb(52, 77, 52);
+
+// global transition time 
+$transition-time:0.5s;
+
+
+.container
+{
+    width: 70%;
+    margin: auto;
+}
+@media(max-width:800px)
+{
+    .container{
+        width: 90%;
+        margin: auto;
+    }
+    .info
+    {
+        display: none;
+    }
+}
+
+
+
+
+.links li a:hover ,.navbar-brand:hover{
+    color:$hover-color!important;
+}
+.active
+{
+    border-bottom: 2px solid green;
+}
+@media ( max-width:600px)
+{
+    .active
+{
+    border-bottom: none
+}
+
+}
+
+.landing
+{
+    padding-top: 100px;
+    .plant-text
+    {
+        .plant-text-title
+        {
+            font-size: 100%;
+        }
+        button{
+            background-color: $main-color;
+            padding: 10px;
+            
+        }
+        button:hover {
+            background-color: $hover-color;
+           
+        }
+        button:hover i{
+            transform: translateX(3px);
+            transition:  transform $transition-time;
+        }
+    }
+
+    .plant-text-des{
+        color: $main-color ;
+    }
+ 
+   .info{
+    writing-mode: vertical-lr;
+    margin-left: auto;
+    color: $main-color;
+    a,span{
+       
+        color: $main-color;
+        transition: $main-color;
+
+       
+
+    }
+    a:hover i{
+        transform: translate(5px);
+        color: $hover-color;
+        transition: $transition-time;
+    }
+
+   }
+
+
+}
+.about
+{
+    margin: 100px 0;
+
+    .image-holder
+    {
+        width: 90%;
+        margin: 10px auto 20px;
+        
+    }
+    .about-text
+    {
+        p{
+            color: $main-color;
+            line-height: 1.6;
+        }
+        ul li,ul li i {
+            color: $main-color;
+            transition: $transition-time;
+        } 
+        ul li:hover{
+            transform: translate(7px);
+            cursor: pointer;
+        }
+        .button
+        {
+            background-color: $main-color;
+        }
+        .button:hover {
+            background-color: $hover-color;
+
+        }
+        .button:hover i{
+            transition: $transition-time;
+            transform: translate(5px);
+        }
+    }
+}
+.cards-section
+{
+    .cards-holder
+    { background-color: $main-color;
+        padding: 10px;
+        border-radius: 20px;
+        margin: 50px 0 ;
+        h1
+        {
+            margin: 70px  auto;
+            font-size: 50px;
+        }
+        
+    }
+    .card .card-number
+    {
+        background-color: $main-color;
+        width: 15%;
+        transition:  all $transition-time;
+      
+
+    }
+    .card:hover .card-number{
+        transform: translateY(-5px);
+
+    }
+   
+   
+    
+
+}
+.products
+{
+    transition: all 0.3s;
+
+    .product
+    {
+        margin: 30px 0;
+        transition: all 0.3s;
+      
+    }
+   padding: {
+    color: $main-color;
+   };
+   h3
+   {
+    color: $main-color;
+   }
+   span
+   {
+    color: $main-color;
+
+   }
+   i
+   {
+    color: $main-color;
+    transition: $transition-time;
+   }
+.product:hover 
+{
+    transition: all 0.3s;
+    img{
+        transform: translateY(-8px);
+        transition: $transition-time;
+    }
+}
+   
+   i:hover{
+    color: $hover-color;
+   }
+   .circle
+   {
+    width: 40%;
+    height: 40%;
+    background-color:rgb(202, 235, 202);
+    position: absolute;
+    z-index: -1;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+
+   }
+}
+
+
+
+.faSection
+{
+    background-color: rgb(185, 208, 185);
+    padding: 100px 0;
+    .accordion .accordion-item 
+    {
+        background-color: rgb(0, 123, 0);
+        color: white;
+    }
+}
+
+
+
+
+.contactUs
+{
+    padding: 100px 0;
+    button[type="submit"]
+    {
+        background-color: $main-color;
+        color:white
+
+    }
+    button[type="submit"]:hover {
+        background-color: $hover-color;
+
+    }
+    button[type="submit"]:hover i{
+        transition: $transition-time;
+        transform: translate(5px);
+    }
+
+    
+}
+
+.footer
+{
+ .info a{
+    margin-bottom: 30px !important;
+ }
+ form div
+ {
+    padding: 20px 5px;
+    border-radius: 5px;
+    background-color: rgb(185, 208, 185);
+    font-weight: bold;
+
+ }
+ button[type="submit"]
+ {
+     background-color: $main-color;
+     color:white;
+     padding: 10px 5px;
+     font-weight: bold;
+
+ }
+ button[type="submit"]:hover {
+     background-color: $hover-color;
+
+ }
+ button[type="submit"]:hover i{
+     transition: $transition-time;
+     transform: translate(5px);
+ }
+ input[type="email"]
+ {
+    border: none;
+    background-color:inherit;
+
+ }
+ input[type="email"]:focus
+ {
+   outline: none;
+ }
+
+}
+
+.addres
+{
+    
+    h3
+    {
+        margin-bottom: 30px;
+    }
+    ul li
+    {
+        margin-bottom: 10px;
+
+    }
+
+}
+
+.ContactUS
+{
+    h3
+    {
+        margin-bottom: 30px;
+    }
+    .icons
+    {
+     a{
+        i{
+            color: black;
+            transition: all 0.3s;
+        }
+      
+     }
+     a:hover{
+        i{
+            
+            transform: translateY(-5px);
+            transition: all 0.3s;
+        }
+    }
+
+    }
+}
+.images
+{
+    div{
+        max-width:35px;
+        margin: 0 3px;
+    }
+}
+.footer-div
+{
+    margin-top: 100px
+}
+
+
+
+.dark-mode{
+    background-color: black;
+    color: white;
+}
